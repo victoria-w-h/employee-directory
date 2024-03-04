@@ -1,0 +1,79 @@
+body {
+	position: relative;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(100, 100, 100, 0.4);
+}
+.modal {
+	width: 375px;
+	margin: 15% auto auto;
+	position: relative;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #778;
+	border-radius: 5px;
+	padding: 30px 20px;
+}
+.modal-close {
+	position: absolute;
+	right: 15px;
+	top: 5px;
+	cursor: pointer;
+}
+.hidden {
+	display: none;
+}
+header {
+	max-width: 1320px;
+	margin: auto;
+}
+/* grid container */
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	gap: 40px;
+	max-width: 1320px;
+	margin: auto;
+}
+.card {
+	display: flex;
+	border: rgb(221, 221, 221) solid 2px;
+	border-radius: 5px;
+	padding: 20px 10px;
+	gap: 20px;
+	align-items: center;
+}
+h2 {
+	font-size: 20px;
+	letter-spacing: 0.54px;
+}
+h2,
+p {
+	margin: 0;
+}
+h1 {
+	text-transform: uppercase;
+	font-size: 20px;
+	margin: 60px 0 35px 0;
+	letter-spacing: 0.74px;
+	font-weight: 400;
+}
+.avatar {
+	border: black solid 2px;
+	border-radius: 50%;
+}
+.text-container {
+	display: grid;
+	gap: 15px;
+}
+.text-container p {
+	color: grey;
+}
