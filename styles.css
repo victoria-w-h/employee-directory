@@ -80,32 +80,77 @@ p {
 	color: var(--grey);
 	font-size: 15px;
 }
-/*  */
-/* .overlay {
-	position: absolute;
-	top: 0;
+
+/* Overlay */
+
+.overlay {
+	/* display: none; */
+	position: fixed;
+	z-index: 3;
 	left: 0;
-	right: 0;
-	bottom: 0;
-	background: rgba(100, 100, 100, 0.4);
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
+/* Modal Content */
 .modal {
-	width: 375px;
+	background-color: #fff;
 	margin: 15% auto auto;
-	position: relative;
-	text-align: center;
-	background: #fff;
-	border: 1px solid #778;
-	border-radius: 5px;
 	padding: 30px 20px;
+	border: 2px solid var(--darkGrey);
+	max-width: 460px;
+	height: 400px;
+	width: 100%;
+	color: black;
+	border-radius: 10px;
+	text-align: center;
+	position: relative;
 }
+
+/* The Close Button */
 .modal-close {
-	position: absolute;
-	right: 15px;
-	top: 5px;
+	max-width: fit-content;
+	margin-left: auto;
+	display: flex;
+	background: transparent;
+	border: none;
+	font-size: 20px;
 	cursor: pointer;
 }
+.modal-avatar {
+	padding-bottom: 20px;
+}
+
 .hidden {
 	display: none;
-} */
+}
+hr {
+	width: 100%;
+	/* height: 1px; */
+	border-top: 1px solid var(--grey);
+}
+
+.next-btn,
+.back-btn {
+	position: absolute;
+	border: none;
+	background: transparent;
+	bottom: 10px;
+	cursor: pointer;
+}
+.next-btn {
+	right: 10px;
+}
+.back-btn {
+	left: 10px;
+}
+.next-btn svg path,
+.back-btn svg path {
+	transition: 0.3s ease;
+}
+.next-btn:hover svg path,
+.back-btn:hover svg path {
+	fill: rgb(0, 179, 255);
+}
