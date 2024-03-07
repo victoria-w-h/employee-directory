@@ -1,12 +1,12 @@
-// VARIABLES
+// FETCHING THE API
+
+// Variables
 
 // url has the different options available to be used in the template
 const urlAPI = `https://randomuser.me/api/?results=12&inc=name, picture,
 email, location, phone, dob &noinfo &nat=US`;
 const gridContainer = document.querySelector(".grid-container");
 let employees = [];
-
-// FETCHING THE API
 
 fetch(urlAPI)
 	// get response in json format
@@ -18,6 +18,7 @@ fetch(urlAPI)
 	.catch((err) => console.log(err));
 
 // EMPLOYEE DATA
+
 // employeeData is an object that is passed to the displayEmployees function and renamed as employees
 function displayEmployees(employeeData) {
 	employees = employeeData;
@@ -141,7 +142,7 @@ searchbar.addEventListener("keyup", (e) => {
 	let employeeNames = document.querySelectorAll("h2.name");
 	employeeNames.forEach((name) => {
 		if (name.textContent.toLowerCase().includes(currentValue)) {
-			name.parentNode.parentNode.style.display = "block";
+			name.parentNode.parentNode.style.display = "flex";
 		} else {
 			name.parentNode.parentNode.style.display = "none";
 		}

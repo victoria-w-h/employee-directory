@@ -35,22 +35,40 @@
 				<input type="text" placeholder="Search for employee" />
 			</div>
 		</header>
-		<!-- to display employee cards that will be imported by js -->
 		<main class="grid-container">
+			<!-- to display employee cards that will be imported by js -->
 		</main>
-			<!-- modal popup -->
-			<div id="popup-overlay" class="overlay hidden">
-				<div class="modal">
-					<button class="modal-close">X</button>
-			
-		<div class="modal-content"></div>
-		<button class="back-btn" onclick="backFunction()"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.29 5.707a1 1 0 0 0-1.415 0L7.988 10.6a2 2 0 0 0 0 2.828l4.89 4.89a1 1 0 0 0 1.415-1.414l-4.186-4.185a1 1 0 0 1 0-1.415l4.182-4.182a1 1 0 0 0 0-1.414Z" fill="#0F0F0F"/></svg></button>
-		<button class="next-btn" onclick="nextFunction()"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.71 18.293a1 1 0 0 0 1.415 0l4.887-4.892a2 2 0 0 0 0-2.828l-4.89-4.89a1 1 0 0 0-1.415 1.414l4.186 4.185a1 1 0 0 1 0 1.415L9.71 16.879a1 1 0 0 0 0 1.414Z" fill="#0F0F0F"/></svg></button>
-
-
-					<div>
-				</div>
+		<!-- modal popup -->
+		<div id="popup-overlay" class="overlay hidden">
+			<div class="modal">
+				<button class="modal-close">X</button>
+				<div class="modal-content"></div>
+				<button class="back-btn" onclick="backFunction()">
+					<svg
+						width="30"
+						height="30"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M14.29 5.707a1 1 0 0 0-1.415 0L7.988 10.6a2 2 0 0 0 0 2.828l4.89 4.89a1 1 0 0 0 1.415-1.414l-4.186-4.185a1 1 0 0 1 0-1.415l4.182-4.182a1 1 0 0 0 0-1.414Z"
+							fill="#0F0F0F" />
+					</svg>
+				</button>
+				<button class="next-btn" onclick="nextFunction()">
+					<svg
+						width="30"
+						height="30"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M9.71 18.293a1 1 0 0 0 1.415 0l4.887-4.892a2 2 0 0 0 0-2.828l-4.89-4.89a1 1 0 0 0-1.415 1.414l4.186 4.185a1 1 0 0 1 0 1.415L9.71 16.879a1 1 0 0 0 0 1.414Z"
+							fill="#0F0F0F" />
+					</svg>
+				</button>
 			</div>
+		</div>
 		<script src="app.js"></script>
 	</body>
 </html>
