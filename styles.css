@@ -44,7 +44,7 @@ input:focus {
 	outline: none;
 }
 
-/* grid container */
+/* --------------- Grid container ------------------ */
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -81,7 +81,7 @@ p {
 	font-size: 15px;
 }
 
-/* Overlay */
+/* --------------- Overlay ------------------ */
 
 .overlay {
 	/* display: none; */

@@ -132,7 +132,18 @@ document.onkeydown = function (e) {
 	}
 };
 
-const searchbarInput = document.querySelector(".searchbar-container input");
-let cards = gridContainer.children;
+// Search functionality
 
-searchbarInput.addEventListener("keydown", function () {});
+const searchbar = document.querySelector(".searchbar-container input");
+
+searchbar.addEventListener("keyup", (e) => {
+	let currentValue = e.target.value.toLowerCase();
+	let employeeNames = document.querySelectorAll("h2.name");
+	employeeNames.forEach((name) => {
+		if (name.textContent.toLowerCase().includes(currentValue)) {
+			name.parentNode.parentNode.style.display = "block";
+		} else {
+			name.parentNode.parentNode.style.display = "none";
+		}
+	});
+});
