@@ -1,2 +1,3 @@
 # employee-directory
- Project 8 on treehouse
+Treehouse project:
+- Project 8 employee directory working with APIs
